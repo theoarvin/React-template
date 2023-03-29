@@ -1,0 +1,26 @@
+{
+  "source": {
+    "include": ["src", "README.md"],
+    "exclude": ["node_modules", "build", "public"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "recurse": true,
+    "destination": "./docs/jsdoc"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "systemName": "My Documentation",
+    "default": {
+      "outputSourceFiles": true
+    },
+    "path": "ink-docstrap",
+    "theme": "cerulean",
+    "navType": "vertical",
+    "linenums": true,
+    "dateFormat": "MMMM Do YYYY, h:mm:ss a"
+  }
+}
